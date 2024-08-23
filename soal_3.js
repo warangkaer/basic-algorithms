@@ -1,7 +1,7 @@
 function countElementArray(arrSearch, arrHastack) {
   const newObj = {};
   arrHastack.forEach((val) => {
-    newObj[val] = newObj[val] === undefined ? 1 : 2;
+    newObj[val] = newObj[val] === undefined ? 1 : newObj[val] + 1;
   });
 
   const newArr = [];
